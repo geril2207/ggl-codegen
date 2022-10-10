@@ -1,0 +1,15 @@
+mutation Register($user: RegisterUserInput!) {
+  register(user: $user) {
+    user {
+      id
+      login
+    }
+  }
+}
+
+query getUser {
+  getUserData {
+    id
+    login
+  }
+}
